@@ -17,7 +17,7 @@ import org.example.webstroitel.model.User;
  * @author Bischev Ramil
  * @since 2020-07-09
  */
-
+@Service
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
