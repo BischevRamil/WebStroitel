@@ -28,6 +28,13 @@
         <h2>Welcome ${pageContext.request.userPrincipal.name} | <a onclick="document.forms['logoutForm'].submit()">Logout</a>
         </h2>
 
+        <h2>File Upload:</h2>
+        <h3>Select a file to upload:</h3> <br/>
+        <form action="${contextPath}/upload" method = "POST" enctype = "multipart/form-data">
+            <input type = "file" name = "file" multiple/>
+            <br/>
+            <input type = "submit" value = "Upload File"/>
+        </form>
     </c:if>
 
 </div>
